@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B32941D247CBE80001FB0C4 /* pointCloudRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B32941C247CBE80001FB0C4 /* pointCloudRenderer.swift */; };
+		2B329420247CD306001FB0C4 /* pointCloud.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2B32941F247CD306001FB0C4 /* pointCloud.metal */; };
+		2B329422247CE506001FB0C4 /* capturedImage.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2B329421247CE506001FB0C4 /* capturedImage.metal */; };
+		2B329426247CE75F001FB0C4 /* myCustomWFMesh.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2B329425247CE75F001FB0C4 /* myCustomWFMesh.metal */; };
+		2B329428247CE7EA001FB0C4 /* captureImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B329427247CE7EA001FB0C4 /* captureImageRenderer.swift */; };
+		2B32942C247E3D21001FB0C4 /* myCustomWFMeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B32942B247E3D20001FB0C4 /* myCustomWFMeshRenderer.swift */; };
+		2B5126C52574C32B0028BA26 /* FindSurfaceWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5126C42574C32B0028BA26 /* FindSurfaceWeb.swift */; };
+		2B568D1021F0729000C45BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B568D0F21F0729000C45BBF /* AppDelegate.swift */; };
+		2B568D1521F0729000C45BBF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B568D1421F0729000C45BBF /* Renderer.swift */; };
+		2B568D1721F0729000C45BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B568D1621F0729000C45BBF /* ViewController.swift */; };
+		2B568D1A21F0729000C45BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B568D1821F0729000C45BBF /* Main.storyboard */; };
+		2B568D1C21F0729100C45BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B568D1B21F0729100C45BBF /* Assets.xcassets */; };
+		2B568D1F21F0729100C45BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B568D1D21F0729100C45BBF /* LaunchScreen.storyboard */; };
+		2BA0AA56258B1FD6001FCDE8 /* FindSurfacaeWebExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0AA55258B1FD6001FCDE8 /* FindSurfacaeWebExtension.swift */; };
+		2BB07D4324C007DB008647C4 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB07D4224C007DB008647C4 /* CameraHelper.swift */; };
+		2BB07D4524C00F90008647C4 /* SampleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB07D4424C00F90008647C4 /* SampleExtension.swift */; };
+		2BC15C5421F85F370005E6D1 /* RenderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15C5021F85F370005E6D1 /* RenderObject.m */; };
+		2BC15C5521F85F370005E6D1 /* RenderObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC15C5321F85F370005E6D1 /* RenderObjectFactory.m */; };
+		2BFFCA8D2487823B00AC1897 /* ConfigAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFCA8C2487823B00AC1897 /* ConfigAlertViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B568D2F21F08D4100C45BBF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B32941C247CBE80001FB0C4 /* pointCloudRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pointCloudRenderer.swift; sourceTree = "<group>"; };
+		2B32941F247CD306001FB0C4 /* pointCloud.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = pointCloud.metal; sourceTree = "<group>"; };
+		2B329421247CE506001FB0C4 /* capturedImage.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = capturedImage.metal; sourceTree = "<group>"; };
+		2B329425247CE75F001FB0C4 /* myCustomWFMesh.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = myCustomWFMesh.metal; sourceTree = "<group>"; };
+		2B329427247CE7EA001FB0C4 /* captureImageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = captureImageRenderer.swift; sourceTree = "<group>"; };
+		2B32942B247E3D20001FB0C4 /* myCustomWFMeshRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCustomWFMeshRenderer.swift; sourceTree = "<group>"; };
+		2B5126C42574C32B0028BA26 /* FindSurfaceWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSurfaceWeb.swift; sourceTree = "<group>"; };
+		2B568D0C21F0729000C45BBF /* ARKitDepthFindSurfaceWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDepthFindSurfaceWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B568D0F21F0729000C45BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B568D1321F0729000C45BBF /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		2B568D1421F0729000C45BBF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		2B568D1621F0729000C45BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B568D1921F0729000C45BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B568D1B21F0729100C45BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B568D1E21F0729100C45BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B568D2021F0729100C45BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B568D2121F0729100C45BBF /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2BA0AA55258B1FD6001FCDE8 /* FindSurfacaeWebExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSurfacaeWebExtension.swift; sourceTree = "<group>"; };
+		2BB07D4224C007DB008647C4 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
+		2BB07D4424C00F90008647C4 /* SampleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleExtension.swift; sourceTree = "<group>"; };
+		2BC15C5021F85F370005E6D1 /* RenderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderObject.m; sourceTree = "<group>"; };
+		2BC15C5121F85F370005E6D1 /* RenderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderObject.h; sourceTree = "<group>"; };
+		2BC15C5221F85F370005E6D1 /* RenderObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderObjectFactory.h; sourceTree = "<group>"; };
+		2BC15C5321F85F370005E6D1 /* RenderObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderObjectFactory.m; sourceTree = "<group>"; };
+		2BFFCA8C2487823B00AC1897 /* ConfigAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigAlertViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B568D0921F0729000C45BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B32941B247CBE65001FB0C4 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				2B32941C247CBE80001FB0C4 /* pointCloudRenderer.swift */,
+				2B329427247CE7EA001FB0C4 /* captureImageRenderer.swift */,
+				2B32942B247E3D20001FB0C4 /* myCustomWFMeshRenderer.swift */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		2B32941E247CC1E0001FB0C4 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				2B568D1321F0729000C45BBF /* ShaderTypes.h */,
+				2B32941F247CD306001FB0C4 /* pointCloud.metal */,
+				2B329421247CE506001FB0C4 /* capturedImage.metal */,
+				2B329425247CE75F001FB0C4 /* myCustomWFMesh.metal */,
+			);
+			name = Shader;
+			sourceTree = "<group>";
+		};
+		2B32942D247E5747001FB0C4 /* myCustomMesh */ = {
+			isa = PBXGroup;
+			children = (
+				2BC15C5121F85F370005E6D1 /* RenderObject.h */,
+				2BC15C5021F85F370005E6D1 /* RenderObject.m */,
+				2BC15C5221F85F370005E6D1 /* RenderObjectFactory.h */,
+				2BC15C5321F85F370005E6D1 /* RenderObjectFactory.m */,
+			);
+			name = myCustomMesh;
+			sourceTree = "<group>";
+		};
+		2B568D0321F0729000C45BBF = {
+			isa = PBXGroup;
+			children = (
+				2B568D0E21F0729000C45BBF /* ARKitDepthFindSurfaceWeb */,
+				2B568D0D21F0729000C45BBF /* Products */,
+				2B568D2A21F08D3A00C45BBF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B568D0D21F0729000C45BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B568D0C21F0729000C45BBF /* ARKitDepthFindSurfaceWeb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B568D0E21F0729000C45BBF /* ARKitDepthFindSurfaceWeb */ = {
+			isa = PBXGroup;
+			children = (
+				2B32942D247E5747001FB0C4 /* myCustomMesh */,
+				2B32941E247CC1E0001FB0C4 /* Shader */,
+				2B32941B247CBE65001FB0C4 /* Renderer */,
+				2B568D0F21F0729000C45BBF /* AppDelegate.swift */,
+				2B568D1421F0729000C45BBF /* Renderer.swift */,
+				2B568D1621F0729000C45BBF /* ViewController.swift */,
+				2B568D1821F0729000C45BBF /* Main.storyboard */,
+				2B568D1B21F0729100C45BBF /* Assets.xcassets */,
+				2B568D1D21F0729100C45BBF /* LaunchScreen.storyboard */,
+				2B568D2021F0729100C45BBF /* Info.plist */,
+				2B568D2121F0729100C45BBF /* Bridging-Header.h */,
+				2BFFCA8C2487823B00AC1897 /* ConfigAlertViewController.swift */,
+				2BB07D4224C007DB008647C4 /* CameraHelper.swift */,
+				2BB07D4424C00F90008647C4 /* SampleExtension.swift */,
+				2B5126C42574C32B0028BA26 /* FindSurfaceWeb.swift */,
+				2BA0AA55258B1FD6001FCDE8 /* FindSurfacaeWebExtension.swift */,
+			);
+			path = ARKitDepthFindSurfaceWeb;
+			sourceTree = "<group>";
+		};
+		2B568D2A21F08D3A00C45BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B568D0B21F0729000C45BBF /* ARKitDepthFindSurfaceWeb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B568D2421F0729100C45BBF /* Build configuration list for PBXNativeTarget "ARKitDepthFindSurfaceWeb" */;
+			buildPhases = (
+				2B568D0821F0729000C45BBF /* Sources */,
+				2B568D0921F0729000C45BBF /* Frameworks */,
+				2B568D0A21F0729000C45BBF /* Resources */,
+				2B568D2F21F08D4100C45BBF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitDepthFindSurfaceWeb;
+			productName = ARKitFindSurface;
+			productReference = 2B568D0C21F0729000C45BBF /* ARKitDepthFindSurfaceWeb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B568D0421F0729000C45BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = CurvSurf;
+				TargetAttributes = {
+					2B568D0B21F0729000C45BBF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = 2B568D0721F0729000C45BBF /* Build configuration list for PBXProject "ARKitDepthFindSurfaceWeb" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B568D0321F0729000C45BBF;
+			productRefGroup = 2B568D0D21F0729000C45BBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B568D0B21F0729000C45BBF /* ARKitDepthFindSurfaceWeb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B568D0A21F0729000C45BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B568D1F21F0729100C45BBF /* LaunchScreen.storyboard in Resources */,
+				2B568D1C21F0729100C45BBF /* Assets.xcassets in Resources */,
+				2B568D1A21F0729000C45BBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B568D0821F0729000C45BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFFCA8D2487823B00AC1897 /* ConfigAlertViewController.swift in Sources */,
+				2BB07D4324C007DB008647C4 /* CameraHelper.swift in Sources */,
+				2BC15C5421F85F370005E6D1 /* RenderObject.m in Sources */,
+				2B5126C52574C32B0028BA26 /* FindSurfaceWeb.swift in Sources */,
+				2BA0AA56258B1FD6001FCDE8 /* FindSurfacaeWebExtension.swift in Sources */,
+				2B329420247CD306001FB0C4 /* pointCloud.metal in Sources */,
+				2BB07D4524C00F90008647C4 /* SampleExtension.swift in Sources */,
+				2B329428247CE7EA001FB0C4 /* captureImageRenderer.swift in Sources */,
+				2B32942C247E3D21001FB0C4 /* myCustomWFMeshRenderer.swift in Sources */,
+				2B32941D247CBE80001FB0C4 /* pointCloudRenderer.swift in Sources */,
+				2B329426247CE75F001FB0C4 /* myCustomWFMesh.metal in Sources */,
+				2B329422247CE506001FB0C4 /* capturedImage.metal in Sources */,
+				2B568D1521F0729000C45BBF /* Renderer.swift in Sources */,
+				2B568D1721F0729000C45BBF /* ViewController.swift in Sources */,
+				2BC15C5521F85F370005E6D1 /* RenderObjectFactory.m in Sources */,
+				2B568D1021F0729000C45BBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B568D1821F0729000C45BBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B568D1921F0729000C45BBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B568D1D21F0729100C45BBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B568D1E21F0729100C45BBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B568D2221F0729100C45BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B568D2321F0729100C45BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B568D2521F0729100C45BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ARKitDepthFindSurfaceWeb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DUSE_SELF_PICKING";
+				PRODUCT_BUNDLE_IDENTIFIER = com.curvsurf.ARKitDepthFindSurfaceWeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitDepthFindSurfaceWeb/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B568D2621F0729100C45BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ARKitDepthFindSurfaceWeb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DUSE_SELF_PICKING";
+				PRODUCT_BUNDLE_IDENTIFIER = com.curvsurf.ARKitDepthFindSurfaceWeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitDepthFindSurfaceWeb/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B568D0721F0729000C45BBF /* Build configuration list for PBXProject "ARKitDepthFindSurfaceWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B568D2221F0729100C45BBF /* Debug */,
+				2B568D2321F0729100C45BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B568D2421F0729100C45BBF /* Build configuration list for PBXNativeTarget "ARKitDepthFindSurfaceWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B568D2521F0729100C45BBF /* Debug */,
+				2B568D2621F0729100C45BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B568D0421F0729000C45BBF /* Project object */;
+}
