@@ -491,8 +491,8 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         
         // Depth Map to Point Cloud
         for g in gridList {
-            let c = (confidenceData.advanced(by: g.y * confidenceStride).assumingMemoryBound(to: UInt8.self))[g.x]
-            if c < 2 { continue } // Check Confidence Value
+            let c = Int( (confidenceData.advanced(by: g.y * confidenceStride).assumingMemoryBound(to: UInt8.self))[g.x] )
+            if c != ARConfidenceLevel.high.rawValue { continue } // Check Confidence Value
             
             let d = Float((depthData.advanced(by: g.y * depthStride).assumingMemoryBound(to: Float32.self))[g.x])
             let worldPoint = localToWorld * simd_make_float4(g.base * Float(d), 1)
