@@ -92,6 +92,8 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Disable DarkMode
+        if #available(iOS 13.0, *) { overrideUserInterfaceStyle = .light }
         
         let myDelegate = UIApplication.shared.delegate as! AppDelegate
         myDelegate.myViewController = self
