@@ -423,7 +423,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = [] // Disable Embeded Plane Detection
         configuration.frameSemantics = [ .sceneDepth, .smoothedSceneDepth ]
-        //configuration.sceneReconstruction = .mesh
         
         if _reset {
             DispatchQueue.main.async { self.resetSomeView() }
@@ -572,24 +571,37 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     private func _pickPoint( rayDirection ray_dir: simd_float3, rayPosition ray_pos: simd_float3, vertices list: UnsafePointer<simd_float3>, count: Int, _ unitRadius: Float) -> Int {
         let UR_SQ_PLUS_ONE = unitRadius * unitRadius + 1.0
-        var minLen : Float = Float.greatestFiniteMagnitude;
-        var pickIdx : Int = -1;
+        var minLen: Float = Float.greatestFiniteMagnitude
+        var maxCos: Float = -Float.greatestFiniteMagnitude
+        
+        var pickIdx   : Int = -1
+        var pickIdxExt: Int = -1
         
         for idx in 0..<count {
-            let sub = list[idx] - ray_pos;
-            let len1 = simd_dot( ray_dir, sub );
+            let sub = list[idx] - ray_pos
+            let len1 = simd_dot( ray_dir, sub )
             
             if len1 < Float.ulpOfOne { continue; } // Float.ulpOfOne == FLT_EPSILON
+            // 1. Inside ProbeRadius (Picking Cylinder Radius)
             if simd_length_squared(sub) < UR_SQ_PLUS_ONE * (len1 * len1) {
-                if(len1 < minLen) { // find most close point to camera
-                    minLen = len1;
-                    pickIdx = idx;
+                if len1 < minLen { // find most close point to camera (in z-direction distance)
+                    minLen = len1
+                    pickIdx = idx
+                }
+            }
+            // 2. Outside ProbeRadius
+            else {
+                let cosine = len1 / simd_length(sub)
+                if cosine > maxCos { // find most close point to probe radius
+                    maxCos = cosine
+                    pickIdxExt = idx
                 }
             }
         }
         
-        return pickIdx
+        return pickIdx < 0 ? pickIdxExt : pickIdx
     }
+
     
     private func runFindSurfaceAsync( onSuccess successHandler: FindSurfaceSuccessHandler?, onFail failHandler: FindSurfaceFailHandler?, onEnd endHandler: FindSurfaceEndHandler? )
     {
