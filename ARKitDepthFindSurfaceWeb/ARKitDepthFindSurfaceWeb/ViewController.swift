@@ -484,9 +484,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         
         let gridList = depthGrid.sample(UInt(sampleCount)) // Sampling Depth Points
         
-        var pointList: [simd_float3] = [];
-        pointList.reserveCapacity(gridList.count)
-        
         let pointBufferS = pointBuffer.assumingMemoryBound(to: simd_float3.self);
         var count = 0;
         
